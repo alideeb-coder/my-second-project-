@@ -1,0 +1,86 @@
+.fifth-page
+{
+    height: 630px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: aqua; */
+}
+.part-1-of-fifth-page
+{
+    width: 250px;
+    margin-left: 30px;
+}
+.photo-15
+{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.part-1-of-fifth-page p{
+    font-size: 35px;
+}
+.flag-1
+{
+    height: 14px;
+    width: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.country
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.country p{
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 10px;
+    color: white;
+}
+.photo-16
+{
+    width: 350px;
+    height: 380px;
+    border-radius: 20px;
+}
+.photo-17
+{
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+}
+.signal-main
+{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.signal
+{
+    height: 30px;
+    position: absolute;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.part-2-of-fifth-page p
+{
+    margin-left: 10px;
+    width: 180px;
+    font-size: 20px;
+    color: rgb(70, 70, 69);
+}
+.photo-18
+{
+    margin-left: 10px;
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+}

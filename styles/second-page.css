@@ -1,0 +1,141 @@
+.second-page
+{
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.photo-5
+{
+    height: 400px;
+}
+.photo-6
+{
+    margin-top: 30px;
+    width: 200px;
+    height: 340px;
+    margin-left:2px ;
+}
+.photo-7
+{
+    height: 200px;
+    marg
+    margin-left:2px ;
+}
+.left-side-of-second-page img{
+    border-radius: 20px;
+    transform: skewY(4deg);
+}
+.left-side-of-second-page
+{
+    perspective: 1000px;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content:start; */
+    align-items: center;
+    margin-left: 30px;
+}
+.right-side-of-second-page
+{
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+}
+.title2
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    width: 420px;
+}
+.Expline
+{
+    font-size: 17px;
+    width: 420px;
+    margin-right: 300px;
+    color: rgb(154, 155, 155);
+}
+.right-side-of-second-page-main
+{
+    margin-left: 30px;
+    width: 600px;
+    /* display:flex; */
+    /* flex-direction: column; */
+}
+.common3 ,.common4 ,.common5
+{
+    padding: 11px;
+    border-radius: 20px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(255, 253, 253,0.7);
+    margin-top: 30px;
+    margin-right: 10px;
+    height: 45px;
+    width: 140px;
+    /* position: absolute; */
+}
+.common3 .s1 ,.common4 .s1 ,.common5 .s1{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.common3 .s2 ,.common4 .s2 ,.common5 .s2{
+    font-weight: lighter;
+    color: rgb(155, 154, 154);
+}
+.common3 .s1 img ,.common4 .s1 img,.common5 .s1 img{
+    height: 20px;
+    margin-left: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.common4 .s1 img
+{
+    margin-left: 60px;
+}
+.common5 .s1 img{
+    margin-left: 50px;
+}
+.button-biger , .button-Book
+{
+    /* margin-left: 20px; */
+    height: 30px;
+    margin-top: 50px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 35px;
+    background-color: rgb(2, 2, 73);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.3s ,box-shadow 0.3s;
+}
+.button-Book
+{
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 8px 15px;
+}
+.button-biger:hover, .button-Book:hover
+{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.button-learn-more
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(2, 24, 85);
+    cursor: pointer;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+.button-learn-more:hover
+{
+    opacity: 0.7;
+}
+.button-learn-more span
+{
+    color: rgb(219, 243, 3);
+}

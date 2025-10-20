@@ -1,0 +1,99 @@
+.eightth-page
+{
+    margin-top: 80px;
+    height: 630px;
+    margin-left: 70px;
+    width: 1200px;
+}
+.top-side-of-eightth-page 
+{
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.title_eightth-page
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.Expline-eightth-page
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    color: rgb(154, 155, 155);
+    margin: 0px;
+    /* margin-bottom: 10px; */
+}
+.botton-Discover
+{
+    padding: 5px 5px;
+    margin: 0px;
+    border: 1px solid rgb(5, 51, 150);
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 10px;
+    color: rgb(5, 51, 150);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.3s ,color 0.3s;
+}
+.botton-Discover:hover{
+    background-color: rgb(5, 51, 150);
+    color: white;
+}
+.under-eightth-page
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.photo-21
+{
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+}
+.adress-eightth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.title-eightth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    color: rgb(121, 122, 122);
+}
+.star-white
+{
+    margin: 0px;
+    width: 10px;
+}
+.eightth-page .cost
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    color: red;
+}
+.photo-22
+{
+    height: 350px;
+    width: 600px;
+    border-radius: 20px;
+}
+.heart
+{
+    position: absolute;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    opacity: 0.5;
+}
