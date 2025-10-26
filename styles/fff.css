@@ -1,0 +1,19 @@
+@keyframes SlideFromRight
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% 
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+width: min(90%,1200px);
+animation: SlideFromRight 1s ease-out 0.5s 1 forwards;
+ text-transform: capitalize;
+ font-size: clamp(2rem,4vw,3rem);

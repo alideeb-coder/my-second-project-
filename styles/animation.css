@@ -1,0 +1,32 @@
+@keyframes SlideFromRight
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% 
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeup 
+{
+    animation: fadeup both;
+    animation-timeline: view();
+    /* animation-range: entry 30% 80% cover 50% 100%; */
+}
+@keyframes fadeup
+{
+    10% ,100%
+    {
+        opacity: 0;
+        transform: translatey(10px),scale(0.4);
+    }
+    50%,70%
+    {
+        opacity: 1;
+        transform: translatey(0) ,scale(1);
+    }
+}

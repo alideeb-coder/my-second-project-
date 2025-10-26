@@ -1,0 +1,160 @@
+
+@media (max-width:1000px) {
+    html 
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:600px){
+    html 
+    {
+        font-size: 10px;
+    }
+    nav
+    {
+        display: none;
+    }
+    .first-page
+    {
+        height: auto;
+        flex-direction: column;
+    }
+    h1
+    {
+        margin: 0;
+        margin-left: 1rem;
+    }
+    .header img 
+    {
+        margin-left: -5rem;
+    }
+    .first-page .left
+{
+    margin-top: 5rem;
+    width: 90%;
+}
+.first-page .common2
+{
+    width: 105%;
+    height: 6rem;
+}
+.first-page .right
+{
+    margin: 0;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25rem ;
+    justify-content: center;
+}
+.photo-1
+{
+    margin: 0;
+}
+.photo-2
+{
+    margin: 0;
+}
+.photo-3
+{
+    margin: 0;
+}
+.photo-4
+{
+    margin: 0;
+}
+.second-page
+{
+    margin-top: 1rem;
+    height: auto;
+    flex-direction: column;
+}
+.second-page .left
+{
+    flex-direction: column;
+}
+.photo-6
+{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.photo-7
+{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.second-page .right 
+{
+    margin-top: 1rem;
+}
+.third-page 
+{
+    height: auto;
+    margin-top: 10rem;
+}
+.third-page .firstly .sixth-page .firstly
+{
+    width: 80%;
+}
+.under 
+{
+    flex-direction: column;
+    align-items: center;
+}
+.forth-page 
+{
+    margin-top: 5rem;
+    height: auto;
+    flex-direction: column;
+}
+.right-side-of-forth-page 
+{
+    margin-top: 5rem;
+}
+.fifth-page 
+{
+    height: auto;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+.sixth-page
+{
+    height: auto;
+    margin-top: 5rem;
+}
+.under-sixth-page 
+{
+    grid-template-columns: 1fr;
+}
+.seventh-page 
+{
+    height: auto;
+}
+.under-seventh-page
+{
+    flex-direction: column;
+}
+.under-seventh-page p
+{
+    width: 90%;
+}
+.under-seventh-page div {
+width: 90%;
+}
+ .eightth-page
+ {
+    height: auto;
+ }
+.under-eightth-page
+{
+    flex-direction: column;
+}
+.top-side-of-nineth-page
+{
+    grid-template-columns: 1fr;
+}
+.photo-25
+{
+    width: 50rem;
+}
+}

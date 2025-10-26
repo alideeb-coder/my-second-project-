@@ -1,0 +1,1364 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+html {
+  font-family:Arial, "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 13px;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+body
+{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+:root
+{
+    --pimarycolor:#000000;
+    --secondrycolor:#03035f;
+    --thirdrycolor:#9a9b9b;
+    --padding:0.2%;
+}
+header
+{
+    padding: 0.5%;
+    /* padding-left: 3%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+h1
+{
+    font-size: 1.7rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-right: 15%;
+    margin-left: 5%;
+    transition: opacity 0.3s;
+}
+h1:hover ,nav ul li:hover
+{
+    opacity: 0.7;
+}
+h1:active ,.nav ul li:active
+{
+    opacity: 0.4;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    font-weight: 700;
+    margin: 0.8rem 1rem;
+}
+nav ul li
+{
+     cursor: pointer;
+     transition: opacity 0.3s;
+}
+header img{
+    height: 2rem;
+    margin-right: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    background-color: #dfdddd;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header h2{
+    /* margin-top: 6px; */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.button-sign-up
+{
+    margin-right: 4rem;
+    margin-left: 15px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 35px;
+    background-color: rgb(2, 2, 73);
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.3s ,box-shadow 0.3s,transform 0.4s;
+}
+.button-sign-up:hover
+{
+    transform: translateY(-5px) scale(1.05);
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.button-log-in
+{
+    margin-left: 20px;
+    padding: 8px 8px;
+    border: 1px solid rgb(5, 51, 150);
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 10px;
+    color: rgb(5, 51, 150);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.3s ,color 0.3s,transform 0.3s;
+}
+.button-log-in:hover{
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgb(5, 51, 150);
+    color: white;
+}
+
+
+
+ /* 
+ --------------------------------------------------
+ -------------------first section------------------
+ --------------------------------------------------
+ */
+
+
+ .first-page
+{
+    /* margin-top: 70px; */
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-page .left
+{
+    /* margin-top: 3rem; */
+    margin: 2rem;
+    width: 40%;
+}
+.first-page .left-side-of-first-page
+{
+    margin-bottom: 1rem;
+    display: flex;
+}
+.left-side-of-first-page img
+{
+    margin-top: -0.5rem;
+    height: 2rem;
+    animation: SlideFromRight 1s ease-out 0.5s 1 forwards;
+    opacity: 0;
+    margin-right: 0.5rem;
+}
+.left-side-of-first-page p
+{
+    animation: SlideFromRight 1s ease-out 0.5s 1 forwards;
+    opacity: 0;
+    color: var(--secondrycolor);
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.first-page .left h2
+{
+    margin-bottom: 2rem;
+    animation: SlideFromRight 1s ease-out 0.5s 1 forwards;
+    opacity: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize; /*   تكبر اول حرف*/
+}
+.first-page .left h3
+{
+    margin-bottom: 3rem;
+    animation: SlideFromRight 1s ease-out 0.5s 1 forwards;
+    /* animation-timeline: view(); */
+    opacity: 0;
+    font-size: 1.3rem;
+    color: var(--thirdrycolor);
+}
+
+.common2
+{
+    padding: 11px;
+    border-radius: 20px;
+    border: 1px solid rgb(250, 241, 241);
+    background-color: rgb(255, 253, 253,0.7);
+    margin-top: 2.5rem;
+    /* margin-left: 30px; */
+    display: flex;
+    height: 4rem;
+    width: 120%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.common2 label{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.common2 p{
+    font-weight: lighter;
+    color:var(--thirdrycolor);
+}
+.button1
+{
+    padding: 10px 16px;
+    /* padding-top: 5px; */
+    border: none;
+    border-radius: 35px;
+    background-color:var(--secondrycolor);
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.3s ,box-shadow 0.3s,transform 0.4s;
+}
+.button1:hover
+{
+    transform: translateY(-5px) scale(1.05);
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.first-page .right
+{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 25.5rem 25.5rem;
+}
+.first-page .right img
+{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.first-page .right img:hover ,.photo-8:hover,.photo-9:hover,.photo-10:hover
+, .common8:hover
+{
+    transform:scale(1.2) translateY(-20px) translateX(-20px) ;
+    filter: brightness(1.5);   /*سطوع*/
+}
+.photo-1
+{
+    margin-top: 4rem;
+    margin-left: 5.2rem;
+    height: 18rem;
+    width: 15rem;
+}
+.photo-2
+{
+    margin-top: 0.6rem;
+    margin-left: -3.2rem;
+    height: 15rem;
+    width: 24rem;
+}
+.photo-3
+{
+    margin-top: 8.8rem;
+    margin-left: -3.8rem;
+     height: 15rem;
+    width: 24rem;
+}
+.photo-4
+{
+    margin-top: 0.6rem;
+    margin-left: -3.7rem;
+    height: 18rem;
+    width: 15rem;
+}
+.common1
+{
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: -3rem;
+    background-color: rgb(255, 253, 253,0.7);
+    padding: 10px ;
+    border: 1px solid rgb(250, 241, 241);
+    border-radius: 20px;
+}
+.common1 .s2
+{
+    font-weight: lighter;
+    color: rgb(155, 154, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* 
+ --------------------------------------------------
+ -------------------second section------------------
+ --------------------------------------------------
+ */
+
+
+ .second-page
+{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second-page .left img{
+    border-radius: 10px;
+    transform: skewY(3.5deg) ;
+}
+.second-page .left 
+{
+    display: flex;
+    align-items: center;
+}
+.photo-5
+{
+    height: 35rem;
+    width: 20rem;
+}
+.photo-6
+{
+    width: 18rem;
+    height: 30rem;
+    margin-left:0.3rem ;
+    margin-right: 0.3rem;
+    margin-top: 2rem;
+}
+.photo-7
+{
+    height: 20rem;
+    margin-top: 4rem;
+}
+
+.second-page .right h1
+{
+    color: rgb(3, 3, 95);
+    font-weight: 700;
+    margin-left: -0.3rem;
+}
+.second-page .right h2
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    width: 89%;
+}
+.second-page .right h3
+{   
+    font-size: 1.2rem;
+    width: 95%;
+    margin-right: 300px;
+    color: rgb(154, 155, 155);
+}
+.second-page .right
+{
+    margin-left: 3rem;
+}
+.second-page .line
+{
+    display: flex;
+    justify-content: space-between;
+}
+.common3 ,.common4 ,.common5
+{
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(255, 253, 253,0.7);
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    height: 5rem;
+    width: 10rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.common3 p ,.common4 p ,.common5 p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.common3 h4 ,.common4 h4 ,.common5 h4{
+    font-weight: lighter;
+    color: rgb(155, 154, 154);
+}
+.common3  img ,.common4  img,.common5  img{
+    height: 20px;
+    padding: 0.1rem;
+    background-color:#dfdddd;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.common3  img:hover ,.common4  img:hover,.common5  img:hover 
+{
+    transform: translateY(-5px) scale(1.2);
+}
+.button-biger , .button-Book
+{
+    height: 2.5rem;
+    margin-top: 4rem;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 35px;
+    background-color: rgb(2, 2, 73);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.3s ,box-shadow 0.3s ,transform 0.5s;
+}
+.button-Book
+{
+    font-weight: 500;
+    margin-top: 1.5rem;
+    padding: 8px 15px;
+}
+.button-biger:hover, .button-Book:hover
+{
+    opacity: 0.7;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.button-learn-more
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(2, 24, 85);
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+.button-learn-more:hover
+{
+    opacity: 0.7;
+}
+.button-learn-more span
+{
+    color: rgb(219, 243, 3);
+}
+
+
+ /* 
+ --------------------------------------------------
+ -------------------third section------------------
+ --------------------------------------------------
+ */
+
+
+.third-page
+{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.third-page .firstly ,.sixth-page .firstly
+{
+    display: flex;
+    flex-direction: column; 
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.third-page .firstly h1 , .sixth-page .firstly h1
+{
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+}
+.third-page .firstly h2 , .sixth-page .firstly h2
+{
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.third-page .firstly h3 , .sixth-page .firstly h3
+{
+    font-size: 1.1rem;
+    color: rgb(154, 155, 155);
+    margin-bottom: 1rem;
+}
+.photo-8
+{
+    height: 23.3rem;
+    width: 16rem;
+    transition: transform 0.3s;
+}
+.photo-9
+{
+    height: 21rem;
+    margin-top: 2.3rem;
+    margin-left: 10px;
+     transition: transform 0.3s;
+}
+.photo-10
+{
+    height: 23.3rem;
+     transition: transform 0.3s;
+}
+.under
+{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+     transition: transform 0.3s;
+}
+.under img
+{
+    border-radius: 20px;
+}
+.photo-11 , .photo-12
+{
+    position: absolute;
+    background-color:#dfdddd;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: -30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.common6
+{
+    font-size: 1rem;
+    width: 70px;
+    margin-top: -50px;
+    margin-left: 10px;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+}
+.common7
+{
+    margin-top: -50px;
+    font-size: 30px;
+    color: rgb(255, 254, 254);
+    /* cursor: pointer; */
+    margin-left: 20px;
+}
+.common7 span
+{
+    font-size: 18px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+.photo-12
+{
+    margin-top: 40px;
+}
+.common8
+{
+    position: relative;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: rgb(167, 167, 167,0.3);
+    transition: transform 0.3s;
+}
+.common9 img
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin-left: -10px;
+}
+.common9
+{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.photo-13
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 105px;
+    margin-bottom: 0px;
+}
+.rating
+{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+.rating-text
+{
+    margin-left: 30px;
+}
+.third-page-text
+{
+    width: 60%;
+    color: white;
+    opacity: 0.9;
+}
+.button-right
+{
+    margin-top: 5px;
+    height: 30px;
+    margin-left: 15px;
+    align-self: center;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(195, 195, 204,);
+    color: rgb(1, 9, 126);
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.3s ,box-shadow 0.3s ,transform 0.3s;
+}
+.button-right:hover
+{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+.button-left
+{
+    margin: 0px;
+    margin-top: 5px;
+    align-self: center;
+    padding: 7px 10px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgb(232, 233, 235);
+    font-weight: 700;
+    background-color: rgb(256, 256, 256,0.2);
+    transition: background-color 0.3s ,color 0.3s ,transform 0.3s;
+}
+.button-left:hover{
+    background-color: rgb(5, 51, 150);
+    color: white;
+}
+.button-left:hover ,.button-right:hover,.photo-12:hover,.photo-11:hover 
+{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+ /* 
+ --------------------------------------------------
+ -------------------forth section------------------
+ --------------------------------------------------
+ */
+
+
+ .forth-page
+{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+.photo-14
+{
+    height: 32rem;
+    width: 50rem;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.right-side-of-forth-page
+{
+    margin-left: 50px;
+    width: 530px;
+}
+.forth-page h1
+{
+    font-size: 20px;
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+}
+.forth-page h2
+{
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: 900;
+}
+.forth-page h3
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: rgb(154, 155, 155);
+}
+
+
+
+ /* 
+ --------------------------------------------------
+ -------------------fiveth section------------------
+ --------------------------------------------------
+ */
+
+
+.fifth-page
+{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+.part-1-of-fifth-page
+{
+    width: 250px;
+    margin-left: 30px;
+}
+.photo-15
+{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.part-1-of-fifth-page p{
+    font-size: 2rem;
+}
+.flag-1
+{
+    height: 14px;
+    width: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.country
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.country p{
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 10px;
+    color: white;
+}
+.photo-16
+{
+    width: 350px;
+    height: 380px;
+    border-radius: 20px;
+}
+.photo-17
+{
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+}
+.signal-main
+{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.signal
+{
+    background-color:hsl(180, 0%, 61%,0.5);
+    height: 30px;
+    position: absolute;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+.signal:hover 
+{
+    transform: translateY(-10px) scale(1.2);
+}
+.part-2-of-fifth-page p
+{
+    margin-left: 10px;
+    width: 180px;
+    font-size: 20px;
+    color: rgb(70, 70, 69);
+}
+.photo-18
+{
+    margin-left: 10px;
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+
+
+/* 
+ --------------------------------------------------
+ -------------------sixth section------------------
+ --------------------------------------------------
+ */
+
+
+
+
+
+
+.sixth-page
+{
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.under-sixth-page
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.photo-19
+{
+    height: 27rem;
+    width: 24rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.adress-sixth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.title-sixth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    color: rgb(121, 122, 122);
+}
+.star
+{
+    margin: 0px;
+    width: 1.2rem;
+}
+.cost
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.cost span{
+    text-decoration: line-through;
+    color: red;
+}
+.photo-20
+{
+    height: 27rem;
+    width: 47rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.photo-20:hover ,.photo-19:hover 
+{
+    transform:scale(1.2) translateY(-20px) translateX(-20px) ;
+    filter: brightness(1.4);  
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* 
+ --------------------------------------------------
+ -------------------seventh section------------------
+ --------------------------------------------------
+ */
+
+
+
+
+
+ .seventh-page
+{
+    margin-top:7rem;
+    height: 100dvh;
+    height: 100vh;
+}
+ .seventh-page h1
+{
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+ .seventh-page h2
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+ .seventh-page h3
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    color: rgb(154, 155, 155);
+    margin: 0px;
+}
+.botton-more
+{
+    margin: 0px;
+    border: 1px solid rgb(5, 51, 150);
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 10px;
+    color: rgb(5, 51, 150);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.3s ,color 0.3s, transform 0.3s;
+}
+.botton-more:hover{
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgb(5, 51, 150);
+    color: white;
+}
+.under-seventh-page
+{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.under-seventh-page p
+{
+    opacity: 0.7;
+    position: absolute;
+    width: 40%;
+    margin-top: 5rem;
+    font-size: 25px;
+    color: rgb(61, 61, 61);
+    margin-left: 10px;
+}
+.under-seventh-page img
+{
+    width: 48rem;
+    border-radius: 20px;
+}
+.part div
+{
+    opacity: 0.7;
+    width: 50%;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(4, 31, 59);
+    margin-top: 10px; 
+    margin-left: 10px;
+}
+
+
+
+
+/* 
+ --------------------------------------------------
+ -------------------eightth section------------------
+ --------------------------------------------------
+ */
+
+
+
+
+
+ .eightth-page
+{
+    margin-top: 6rem;
+    height: 630px;
+}
+.eightth-page h1
+{
+    color: rgb(3, 3, 95);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.eightth-page h2
+{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.eightth-page h3
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    color: rgb(154, 155, 155);
+    margin: 0px;
+}
+.botton-Discover
+{
+    padding: 5px 5px;
+    margin: 0px;
+    border: 1px solid rgb(5, 51, 150);
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 10px;
+    color: rgb(5, 51, 150);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.3s ,color 0.3s, transform 0.3s;
+}
+.botton-Discover:hover{
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgb(5, 51, 150);
+    color: white;
+}
+.under-eightth-page
+{
+    margin-top: 20px;
+    display: flex;
+}
+.photo-21
+{
+    height: 27rem;
+    width: 25rem;
+    border-radius: 20px;
+}
+.adress-eightth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.title-eightth-page
+{
+    margin: 0px;
+    margin-top: 5px;
+    color: rgb(121, 122, 122);
+}
+.star-white
+{
+    margin: 0px;
+    width: 15px;
+}
+.eightth-page .cost
+{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    color: red;
+}
+.photo-22
+{
+    height: 27rem;
+    width: 46rem;
+    border-radius: 20px;
+}
+.heart
+{
+    padding: 0.4rem;
+    background-color: #000000;
+    position: absolute;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -3.3rem;
+    opacity: 0.5;
+    border-radius: 0.6rem;
+    transition: all 0.3s;
+}
+
+.heart:hover
+{
+    transform: translateY(-10px) scale(1.1);
+    background-color: rgb(143, 142, 141);
+}
+
+
+
+
+
+/* 
+ --------------------------------------------------
+ -------------------nineth section------------------
+ --------------------------------------------------
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nineth-page
+{
+    padding: 0;
+    margin-top: 6rem;
+    height: auto;
+}
+.top-side-of-nineth-page
+{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.signal-nineth-page
+{
+    position: absolute;
+    height: 40px;
+    top: 20px;
+    left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #2b2a2a;
+}
+.adress-photo-23
+{
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    top:5.5rem;
+    left: 10px;
+    width: 20rem;
+    font-weight: 700;
+}
+.title-photo-23
+{
+    position: absolute;
+    font-size: 1.1rem;
+    color: var(--thirdrycolor);
+    top:10rem;
+    left: 10px;
+}
+.button-Booking
+{
+    position: absolute;
+    margin-left: 10px;
+    left: 0px;
+    bottom: 40px;
+    border: 1px solid rgb(1, 5, 12);
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 10px;
+    color: rgb(2, 6, 15);
+    font-weight: 700;
+    background-color: white;
+    transition: background-color 0.3s ,color 0.3s ,transform 0.3s;
+}
+.button-Booking:hover{
+    background-color: rgb(2, 6, 15);
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+}
+.photo-23
+{
+    border-radius: 20px;
+    height: 19rem;
+    width: 38rem;
+    transition: filter 0.3s;
+}
+.nineth-page:has(.button-Booking:hover) .photo-23
+{
+    filter: blur(4px);
+}
+.name
+{
+    position: absolute;
+    bottom: 5rem;
+    left: 10px;
+    font-size: 1.4rem;
+    color: rgb(97, 96, 96);
+}
+.Subscriber
+{
+    color: white;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.photo-24
+{
+    border-radius: 20px;
+    height: 13rem;
+    width: 38rem;
+}
+.last-text
+{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    width: 40rem;
+    transform: translate(-50%,-50%);
+    color: rgb(88, 88, 88);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+.photo-25
+{
+    border-radius: 20px;
+    height: 32rem;
+    width: 60rem;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+/* 
+ --------------------------------------------------
+ -------------------foter------------------
+ --------------------------------------------------
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    max-width: 100%;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    border-radius: 20px;
+}
+.adress-footer
+{
+    color: rgb(212, 212, 212);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.title-footer
+{
+    color: rgb(121, 117, 117);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* width: 350px; */
+    cursor: pointer;
+}
+.lst-footer
+{
+    color: rgb(182, 181, 181);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 130px;
+    cursor: pointer;
+}
+.Search-bar
+{
+    background-color: rgb(26, 25, 25);
+    margin-left: 20px;
+    margin-right: 40px;
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 10px;
+    color: rgb(108, 109, 109);
+}
+.search-button
+{
+    height: 43px;
+    width: 80px;
+    cursor: pointer;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(192,192,192);
+    margin-left: -54px;
+}
+.Search-bar::placeholder
+{
+    font-size: 16px;
+    color: rgb(108, 109, 109);
+}
+.logo
+{
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.logo:hover
+{
+    transform: translateY(-10px) scale(1.1);
+}
+.lstest
+{
+    display: flex;
+    margin-top: 85px;
+    margin-left: 135px;
+}
+.lstest p
+{
+    color: rgb(182, 181, 181);
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
